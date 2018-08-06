@@ -2,15 +2,15 @@ PODS:
   - ScrollSegmentsSwift (0.1.0)
 
 DEPENDENCIES:
-  - ScrollSegmentsSwift (from `../`)
+  - ScrollSegmentsSwift
 
-EXTERNAL SOURCES:
-  ScrollSegmentsSwift:
-    :path: "../"
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ScrollSegmentsSwift
 
 SPEC CHECKSUMS:
-  ScrollSegmentsSwift: 9b45632d4de4763589e6e9c61dbe0826ce3495a0
+  ScrollSegmentsSwift: 21bed52784b31e80b5b9203c2369c62960075b24
 
-PODFILE CHECKSUM: dc1a68e05c9c8d854f77329cd2bcb68afc4f7fd3
+PODFILE CHECKSUM: d8227cb4444b780198c6bb03a7eb74cb08adf046
 
 COCOAPODS: 1.5.3

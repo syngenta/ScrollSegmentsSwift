@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BDBC43821187204006200E9 /* ScrollSegmentsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDBC43721187204006200E9 /* ScrollSegmentsSwift.framework */; };
 		4B10E475D5A9F66E40BE9FE5 /* Pods_ScrollSegmentsSwift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B31C70A7BD14B87566F1FA /* Pods_ScrollSegmentsSwift_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -28,8 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		084B770F94D42091F5F5BEDF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		084B770F94D42091F5F5BEDF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		0E9BD5E8DF05A588D1A5F96A /* Pods_ScrollSegmentsSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollSegmentsSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BDBC43721187204006200E9 /* ScrollSegmentsSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ScrollSegmentsSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C6BB820AF6539B76C28DADF /* Pods-ScrollSegmentsSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollSegmentsSwift_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollSegmentsSwift_Example/Pods-ScrollSegmentsSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ScrollSegmentsSwift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollSegmentsSwift_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,10 +45,10 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7C88C7CF8B0187B8C71BC3FA /* Pods-ScrollSegmentsSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollSegmentsSwift_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollSegmentsSwift_Tests/Pods-ScrollSegmentsSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		85B31C70A7BD14B87566F1FA /* Pods_ScrollSegmentsSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollSegmentsSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		931AF5A81FB91223C9C64909 /* ScrollSegmentsSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ScrollSegmentsSwift.podspec; path = ../ScrollSegmentsSwift.podspec; sourceTree = "<group>"; };
+		931AF5A81FB91223C9C64909 /* ScrollSegmentsSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ScrollSegmentsSwift.podspec; path = ../ScrollSegmentsSwift.podspec; sourceTree = "<group>"; };
 		E66D095E434F744DBE5E58F3 /* Pods-ScrollSegmentsSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollSegmentsSwift_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollSegmentsSwift_Example/Pods-ScrollSegmentsSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FC0CEFC72CC4F7310DAD0F60 /* Pods-ScrollSegmentsSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollSegmentsSwift_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollSegmentsSwift_Tests/Pods-ScrollSegmentsSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FC2E02C70CC4ED72C53C68B8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FC2E02C70CC4ED72C53C68B8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BDBC43821187204006200E9 /* ScrollSegmentsSwift.framework in Frameworks */,
 				4B10E475D5A9F66E40BE9FE5 /* Pods_ScrollSegmentsSwift_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +75,7 @@
 		1791B6F31DE348331BB976AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3BDBC43721187204006200E9 /* ScrollSegmentsSwift.framework */,
 				85B31C70A7BD14B87566F1FA /* Pods_ScrollSegmentsSwift_Example.framework */,
 				0E9BD5E8DF05A588D1A5F96A /* Pods_ScrollSegmentsSwift_Tests.framework */,
 			);
@@ -213,6 +217,7 @@
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -469,11 +474,15 @@
 			baseConfigurationReference = 5C6BB820AF6539B76C28DADF /* Pods-ScrollSegmentsSwift_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ScrollSegmentsSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -484,11 +493,15 @@
 			baseConfigurationReference = E66D095E434F744DBE5E58F3 /* Pods-ScrollSegmentsSwift_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ScrollSegmentsSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};

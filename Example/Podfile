@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'ScrollSegmentsSwift_Example' do
-  pod 'ScrollSegmentsSwift', :path => '../'
+  pod 'ScrollSegmentsSwift'
 
   target 'ScrollSegmentsSwift_Tests' do
     inherit! :search_paths

@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'ScrollSegmentsSwift'
-s.version          = '0.1.0'
+s.version          = `git describe --abbrev=0 --tags`
 s.summary          = 'Scrollable segments with animation for iOS.'
 s.description      = <<-DESC
 'Scrollable segments with animation for iOS.'
