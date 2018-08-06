@@ -1,0 +1,16 @@
+PODS:
+  - ScrollSegmentsSwift (0.1.0)
+
+DEPENDENCIES:
+  - ScrollSegmentsSwift (from `../`)
+
+EXTERNAL SOURCES:
+  ScrollSegmentsSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ScrollSegmentsSwift: 9b45632d4de4763589e6e9c61dbe0826ce3495a0
+
+PODFILE CHECKSUM: dc1a68e05c9c8d854f77329cd2bcb68afc4f7fd3
+
+COCOAPODS: 1.5.3
