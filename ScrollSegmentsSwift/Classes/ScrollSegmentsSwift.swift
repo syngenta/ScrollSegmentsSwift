@@ -31,7 +31,7 @@ public class ScrollSegmentsSwift: UIControl {
     
     public weak var delegate: ScrollSegmentDelegate?
     public var style: ScrollSegmentStyle
-    public var titles: [String]? {
+    @IBInspectable public var titles: [String]? {
         didSet {
             reloadData(selectedIndex: 0)
         }
