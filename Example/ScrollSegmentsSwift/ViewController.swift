@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ScrollSegmentsSwift
 
 
 class ViewController: UIViewController {
