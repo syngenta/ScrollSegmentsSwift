@@ -68,8 +68,17 @@ public class ScrollSegmentsSwift: UIControl {
         self.style = ScrollSegmentStyle()
         self.titles = []
         super.init(coder: aDecoder)
+        NotificationCenter.default.addObserver(self, selector: #selector(rotated), name: NSNotification.Name.UIApplicationDidChangeStatusBarOrientation, object: nil)
     }
-
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIApplicationDidChangeStatusBarOrientation, object: nil)
+    }
+    
+    @objc func rotated() {
+        self.updateViewRotation()
+    }
+    
     @objc private func handleTapGesture(_ gesture: UITapGestureRecognizer) {
         let x = gesture.location(in: self).x + scrollView.contentOffset.x
         for (i, label) in titleLabels.enumerated() {
@@ -85,26 +94,30 @@ public class ScrollSegmentsSwift: UIControl {
         if #available(iOS 9.0, *) {
 
             guard index >= 0 , index < titleLabels.count else { return }
-
+            
             if style.isScrollable {
                 let offSetX = -((scrollView.frame.width/2) - titleLabels[index].frame.origin.x - (titleLabels[index].frame.size.width/2) )
-                self.scrollView.setContentOffset(CGPoint(x:offSetX, y: 0), animated: true)
                 self.scrollView.contentInset.left = self.bounds.width/2 - ((titleLabels.first?.frame.size.width)!/2)
                 self.scrollView.contentInset.right = self.bounds.width/2 - ((titleLabels.last?.frame.size.width)!/2)
-
+                self.scrollView.setContentOffset(CGPoint(x:offSetX, y: 0), animated: animated)
             } else {
                 self.scrollView.frame = self.bounds
             }
-            UIView.animate(withDuration: 0.2, animations: {
+            if animated {
+                UIView.animate(withDuration: 0.2, animations: {
+                    self.setIndicatorFrame(indexLabel: index)
+                    self.layoutIfNeeded()
+                })
+            } else {
                 self.setIndicatorFrame(indexLabel: index)
                 self.layoutIfNeeded()
-
-            })
+            }
+            
             if self.selectIndex != index {
                 self.delegate?.segmentSelected(index: index)
             }
             selectIndex = index
-            sendActions(for: UIControlEvents.valueChanged)
+            sendActions(for: UIControl.Event.valueChanged)
         }
     }
 
@@ -135,11 +148,12 @@ public class ScrollSegmentsSwift: UIControl {
 
     private func reloadData(orientationChanged: Bool? = false, selectedIndex: Int) {
         if #available(iOS 9.0, *) {
-
+           
+            let paddingsOnTheSide: CGFloat = self.style.isScrollable ? 0 : 20
             let segmentsStack = UIStackView()
             segmentsStack.translatesAutoresizingMaskIntoConstraints = false
             segmentsStack.translatesAutoresizingMaskIntoConstraints = false
-            segmentsStack.layoutMargins = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+            segmentsStack.layoutMargins = UIEdgeInsets(top: 0, left: paddingsOnTheSide, bottom: 0, right: paddingsOnTheSide)
             segmentsStack.isLayoutMarginsRelativeArrangement = true
             self.scrollView.translatesAutoresizingMaskIntoConstraints = false
             self.addSubview(self.scrollView)
@@ -224,7 +238,7 @@ public class ScrollSegmentsSwift: UIControl {
                 segmentsStack.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
             }
             DispatchQueue.main.async {
-                self.setSelectIndex(index: 0)
+                self.setSelectIndex(index: 0, animated: false)
                 self.delegate?.dataLoaded()
             }
         } else {
@@ -236,11 +250,11 @@ public class ScrollSegmentsSwift: UIControl {
             DispatchQueue.main.async { [weak self] in
                 if let self_ = self {
                     if self_.style.isScrollable {
-                        let offSetX = -(self_.scrollView.frame.width/2 - self_.titleLabels[self_.selectIndex].frame.origin.x - self_.titleLabels[self_.selectIndex].frame.size.width/2 )
-                        self?.scrollView.setContentOffset(CGPoint(x:offSetX, y: 0), animated: true)
+                        let offSetX = -(self_.scrollView.frame.width/2 - self_.titleLabels[self_.selectIndex].frame.origin.x - self_.titleLabels[self_.selectIndex].frame.size.width/2)
                         if let firstSegment = self_.titleLabels.first, let lastSegment = self_.titleLabels.last {
                             self?.scrollView.contentInset.left = self_.bounds.width/2 - firstSegment.frame.size.width/2
                             self?.scrollView.contentInset.right = self_.bounds.width/2 - lastSegment.frame.size.width/2
+                            self?.scrollView.setContentOffset(CGPoint(x:offSetX, y: 0), animated: true)
                         }
                     } else {
                         self?.setIndicatorFrame(indexLabel: self_.selectIndex)
