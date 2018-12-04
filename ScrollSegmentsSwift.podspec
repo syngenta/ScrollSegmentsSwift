@@ -21,7 +21,7 @@ s.author           = { 'Ievgen Iefimenko' => 'raketenok@gmail.com' }
 s.source           = { :git => 'https://github.com/raketenok/ScrollSegmentsSwift.git', :tag => s.version }
 s.ios.deployment_target = '9.0'
 s.source_files = 'ScrollSegmentsSwift/**/*'
-s.swift_version = '4.2'
+s.swift_version = '4.0'
 end
 
 #git describe --abbrev=0 --tags

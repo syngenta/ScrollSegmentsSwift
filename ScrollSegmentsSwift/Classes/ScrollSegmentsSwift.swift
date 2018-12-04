@@ -31,7 +31,7 @@ public class ScrollSegmentsSwift: UIControl {
     
     public weak var delegate: ScrollSegmentDelegate?
     public var style: ScrollSegmentStyle
-    @IBInspectable public var titles: [String]? {
+    @IBInspectable public var titles: [String] {
         didSet {
             reloadData(selectedIndex: 0)
         }
@@ -39,7 +39,7 @@ public class ScrollSegmentsSwift: UIControl {
     private var titleLabels: [UILabel] = []
     private var constraintIndWidth = NSLayoutConstraint()
     private var constraintIndLeft = NSLayoutConstraint()
-    private let segmentsStack = UIStackView()
+  
     public private(set) var selectIndex = 0
     
     let scrollView: UIScrollView = {
@@ -67,12 +67,13 @@ public class ScrollSegmentsSwift: UIControl {
     //MARK:- life cycle
     required public init?(coder aDecoder: NSCoder) {
         self.style = ScrollSegmentStyle()
+        self.titles = []
         super.init(coder: aDecoder)
-        NotificationCenter.default.addObserver(self, selector: #selector(rotated), name: UIApplication.didChangeStatusBarOrientationNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(rotated), name: NSNotification.Name.UIApplicationDidChangeStatusBarOrientation, object: nil)
     }
     
     deinit {
-        NotificationCenter.default.removeObserver(self, name: UIApplication.didChangeStatusBarOrientationNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIApplicationDidChangeStatusBarOrientation, object: nil)
     }
     
     @objc func rotated() {
@@ -142,9 +143,10 @@ public class ScrollSegmentsSwift: UIControl {
         }
     }
     
-        private func reloadData(orientationChanged: Bool? = false, selectedIndex: Int) {
+    private func reloadData(orientationChanged: Bool? = false, selectedIndex: Int) {
 
         let paddingsOnTheSide: CGFloat = self.style.isScrollable ? 0 : 20
+        let segmentsStack = UIStackView()
         segmentsStack.translatesAutoresizingMaskIntoConstraints = false
         segmentsStack.translatesAutoresizingMaskIntoConstraints = false
         segmentsStack.layoutMargins = UIEdgeInsets(top: 0, left: paddingsOnTheSide, bottom: 0, right: paddingsOnTheSide)
@@ -166,7 +168,7 @@ public class ScrollSegmentsSwift: UIControl {
         let bottomConstraint1 = segmentsStack.bottomAnchor.constraint(equalTo: self.scrollView.bottomAnchor)
         NSLayoutConstraint.activate([topConstraint, leftConstraint, rightConstraint, bottomConstraint, topConstraint1, leftConstraint1, rightConstraint1, bottomConstraint1, h, centerY])
 
-        guard let titles = self.titles, titles.count > 0  else {
+        guard self.titles.count > 0  else {
             return
         }
         // Set titles
@@ -238,7 +240,7 @@ public class ScrollSegmentsSwift: UIControl {
     }
     
     
-private func updateViewRotation() {
+    private func updateViewRotation() {
         DispatchQueue.main.async { [weak self] in
             if let self_ = self {
                 if self_.style.isScrollable {
