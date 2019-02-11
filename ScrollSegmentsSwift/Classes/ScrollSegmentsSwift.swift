@@ -10,7 +10,7 @@ import Foundation
 import CoreFoundation
 
 public struct ScrollSegmentStyle {
-
+    
     public var indicatorColor = UIColor(white: 0.95, alpha: 1)
     public var titleMargin: CGFloat = 16
     public var titlePendingHorizontal: CGFloat = 15
@@ -31,8 +31,8 @@ extension ScrollSegmentDelegate {
 }
 
 public class ScrollSegmentsSwift: UIControl {
-
-
+    
+    
     public weak var delegate: ScrollSegmentDelegate?
     public var style: ScrollSegmentStyle
     @IBInspectable public var titles:[String] {
@@ -43,9 +43,9 @@ public class ScrollSegmentsSwift: UIControl {
     private var titleLabels: [UILabel] = []
     private var constraintIndWidth = NSLayoutConstraint()
     private var constraintIndLeft = NSLayoutConstraint()
-
+    
     public private(set) var selectedIndex = 0
-
+    
     let scrollView: UIScrollView = {
         let view = UIScrollView()
         view.showsHorizontalScrollIndicator = false
@@ -57,15 +57,18 @@ public class ScrollSegmentsSwift: UIControl {
         view.scrollsToTop = false
         return view
     }()
-
+    
     private var indicator: UIView = {
         let ind = UIView()
         ind.translatesAutoresizingMaskIntoConstraints = false
         ind.layer.masksToBounds = true
         return ind
     }()
-
-
+    
+    public override func layoutSubviews() {
+        self.updateViewLayouts()
+    }
+    
     //MARK:- life cycle
     required public init?(coder aDecoder: NSCoder) {
         self.style = ScrollSegmentStyle()
@@ -79,7 +82,7 @@ public class ScrollSegmentsSwift: UIControl {
     }
     
     @objc private func rotated() {
-        self.updateViewRotation()
+        self.updateViewLayouts()
     }
     
     @objc private func handleTapGesture(_ gesture: UITapGestureRecognizer) {
@@ -134,8 +137,8 @@ public class ScrollSegmentsSwift: UIControl {
         var leftInset = CGFloat()
         
         if !style.isScrollable {
-            width = currentLabel.frame.size.width
-            leftInset = currentLabel.frame.origin.x
+            width = currentLabel.frame.size.width + 10
+            leftInset = currentLabel.frame.origin.x - 5
         } else {
             width = currentLabel.frame.size.width + coverH/1.3
             leftInset = currentLabel.frame.origin.x - coverH/2.6
@@ -243,17 +246,17 @@ public class ScrollSegmentsSwift: UIControl {
             self.setSelectIndex(index: 0, animated: false)
             self.delegate?.scrollSegmentsLoaded()
         }
-        
     }
-    public func updateViewRotation() {
+    
+    private func updateViewLayouts() {
         
         DispatchQueue.main.async { [weak self] in
             guard let self_ = self else {
                 return
             }
+            self?.setIndicatorFrame(indexLabel: self_.selectedIndex)
             
             guard self_.style.isScrollable else {
-                self?.setIndicatorFrame(indexLabel: self_.selectedIndex)
                 return
             }
             
