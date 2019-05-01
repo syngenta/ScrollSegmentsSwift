@@ -11,7 +11,6 @@ before_install:
 - cd Example
 - gem install cocoapods # Since Travis is not always on latest version
 - pod install --repo-update
-- pod install --project-directory=Example
 script: xcodebuild clean build test -workspace Example/ScrollSegmentsSwift.xcworkspace -scheme "CI" -sdk iphonesimulator -destination "platform=iOS Simulator,OS=12.1,name=iPhone 7" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
 
 
