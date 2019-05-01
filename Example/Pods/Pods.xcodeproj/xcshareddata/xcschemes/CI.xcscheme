@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0900"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,15 +14,15 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "ScrollSegmentsSwift_Example.app"
-               BlueprintName = "ScrollSegmentsSwift_Example"
-               ReferencedContainer = "container:ScrollSegmentsSwift.xcodeproj">
+               BlueprintIdentifier = "D7770BA371571B4FC60B009071C52D0D"
+               BuildableName = "ScrollSegmentsSwift.framework"
+               BlueprintName = "ScrollSegmentsSwift"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
-            buildForRunning = "YES"
+            buildForRunning = "NO"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
             buildForAnalyzing = "NO">
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
                BuildableName = "ScrollSegmentsSwift_Tests.xctest"
                BlueprintName = "ScrollSegmentsSwift_Tests"
-               ReferencedContainer = "container:ScrollSegmentsSwift.xcodeproj">
+               ReferencedContainer = "container:../ScrollSegmentsSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,17 +49,17 @@
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
                BuildableName = "ScrollSegmentsSwift_Tests.xctest"
                BlueprintName = "ScrollSegmentsSwift_Tests"
-               ReferencedContainer = "container:ScrollSegmentsSwift.xcodeproj">
+               ReferencedContainer = "container:../ScrollSegmentsSwift.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "ScrollSegmentsSwift_Example.app"
-            BlueprintName = "ScrollSegmentsSwift_Example"
-            ReferencedContainer = "container:ScrollSegmentsSwift.xcodeproj">
+            BlueprintIdentifier = "D7770BA371571B4FC60B009071C52D0D"
+            BuildableName = "ScrollSegmentsSwift.framework"
+            BlueprintName = "ScrollSegmentsSwift"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,16 +75,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "ScrollSegmentsSwift_Example.app"
-            BlueprintName = "ScrollSegmentsSwift_Example"
-            ReferencedContainer = "container:ScrollSegmentsSwift.xcodeproj">
+            BlueprintIdentifier = "D7770BA371571B4FC60B009071C52D0D"
+            BuildableName = "ScrollSegmentsSwift.framework"
+            BlueprintName = "ScrollSegmentsSwift"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -94,16 +93,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "ScrollSegmentsSwift_Example.app"
-            BlueprintName = "ScrollSegmentsSwift_Example"
-            ReferencedContainer = "container:ScrollSegmentsSwift.xcodeproj">
+            BlueprintIdentifier = "D7770BA371571B4FC60B009071C52D0D"
+            BuildableName = "ScrollSegmentsSwift.framework"
+            BlueprintName = "ScrollSegmentsSwift"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
