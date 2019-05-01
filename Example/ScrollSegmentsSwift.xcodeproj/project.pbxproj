@@ -274,7 +274,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ScrollSegmentsSwift_Example/Pods-ScrollSegmentsSwift_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ScrollSegmentsSwift_Example/Pods-ScrollSegmentsSwift_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ScrollSegmentsSwift/ScrollSegmentsSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -283,7 +283,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollSegmentsSwift_Example/Pods-ScrollSegmentsSwift_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScrollSegmentsSwift_Example/Pods-ScrollSegmentsSwift_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2F768D6470DBEB84BF93D48E /* [CP] Check Pods Manifest.lock */ = {

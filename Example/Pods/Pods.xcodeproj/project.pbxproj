@@ -7,288 +7,282 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07D019E71E1149A4C3E909EA448BE501 /* Pods-ScrollSegmentsSwift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A047B2862CA3E5A6EC60B9242B99AA5 /* Pods-ScrollSegmentsSwift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0884EC757E994039BBEE5DDB5180F274 /* Pods-ScrollSegmentsSwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B3D6B3F3636A769B404599EC88CFC7E7 /* Pods-ScrollSegmentsSwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24238DDB544F399CA1E98DAB9158585A /* ScrollSegmentsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDCCCB504013208D17B11FE26CC3D66 /* ScrollSegmentsSwift.swift */; };
-		5842DFFB6CF1E5F34286F1B07BCC0AC0 /* ScrollSegmentsSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BE004F95D64FEB11A2F0E25BA344C8D /* ScrollSegmentsSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		67CC478573605578D602660AB22B0A14 /* Pods-ScrollSegmentsSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34579C40BB4D54B848C64DF56830EBB3 /* Pods-ScrollSegmentsSwift_Tests-dummy.m */; };
-		68C0CCB41250C0F0503267C58A71E7A1 /* Pods-ScrollSegmentsSwift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC7EFF45AECBBB076606ED298F8F02F /* Pods-ScrollSegmentsSwift_Example-dummy.m */; };
-		A8F708BAB468CD6E1E3A0FF251FB76BE /* ScrollSegmentsSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78252CB9A5AF3FCF01470C5574F7F12F /* ScrollSegmentsSwift-dummy.m */; };
-		C27F822A2A965F156EDE421CA13691F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		C8C9D4990AF705BA07188A43FD5DB766 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		F47F643650694D0FF7DB21F64A2D0ABE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		0571FB805EBB5FEBE8697E4F24ECD5C2 /* Pods-ScrollSegmentsSwift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A198522AC692D37C9E18351FE54FC770 /* Pods-ScrollSegmentsSwift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50C4457FD0B03CED1A03E0ED69573B2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		605FFB1C5195BD3978CF6FB9A29A3083 /* ScrollSegmentsSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9998C9B79BC0D6B0971687ED1A029CAB /* ScrollSegmentsSwift-dummy.m */; };
+		6546C21CBAD3EB04E2AF762B02F185C2 /* ScrollSegmentsSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E45EDA81E1E10F5EE17CCE78D39BBA9 /* ScrollSegmentsSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3D5359169AC312C22996D6FF082D178 /* Pods-ScrollSegmentsSwift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F9C3BF1FCEDB249E144D6D34490B65 /* Pods-ScrollSegmentsSwift_Example-dummy.m */; };
+		BA5212B0C658D7E853C659F64652BC34 /* Pods-ScrollSegmentsSwift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B408393C6419F0F2B1981FF6074D70 /* Pods-ScrollSegmentsSwift_Tests-dummy.m */; };
+		CB37AE6918702F253F3AD87B6853D02C /* ScrollSegmentsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1013FE92CB4FFF0A54D44252D469C60 /* ScrollSegmentsSwift.swift */; };
+		E514A3C54AA1404D353272346B7C5568 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		E619185D1C186E38F9AD672AA4A758DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		F40B5F153460AA32F90BE9ABC8C09811 /* Pods-ScrollSegmentsSwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 456198CE0E6D56076556E2D261E9C6D8 /* Pods-ScrollSegmentsSwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		71B57DA0BDADA812BAC63B06CC720F62 /* PBXContainerItemProxy */ = {
+		7060E1A68EA4DAA85D711C16A13970E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4641E1AB3445040052B3A561BB00454D;
+			remoteGlobalIDString = ED9D7205D3DB5682CF796BA0C98162A1;
 			remoteInfo = "Pods-ScrollSegmentsSwift_Example";
 		};
-		E0EF673979F6AA3663D248F0C7C7FA95 /* PBXContainerItemProxy */ = {
+		76BA5418D092EAA66B49750069AB6F52 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D7770BA371571B4FC60B009071C52D0D;
+			remoteGlobalIDString = FDEE2F30545EE2A5B922FBBAAB6519A3;
 			remoteInfo = ScrollSegmentsSwift;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		084B5E0B0AA25E09450BA317497D1642 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		091AF661634A7C79B6793D5A9BA2A84C /* Pods-ScrollSegmentsSwift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScrollSegmentsSwift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		142F81E7D6527B2509A3A654DA87B29A /* ScrollSegmentsSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollSegmentsSwift.xcconfig; sourceTree = "<group>"; };
-		198411936295689C03C6C7233BB5487D /* Pods-ScrollSegmentsSwift_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScrollSegmentsSwift_Example-resources.sh"; sourceTree = "<group>"; };
-		2E19A36C7E78699EDBBA0F3F38E58C23 /* Pods-ScrollSegmentsSwift_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScrollSegmentsSwift_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		305622DD89F324EE86A8322A937AF531 /* Pods-ScrollSegmentsSwift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScrollSegmentsSwift_Example-frameworks.sh"; sourceTree = "<group>"; };
-		32D6A693A22FA1E3C828438EABC2A348 /* ScrollSegmentsSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScrollSegmentsSwift.modulemap; sourceTree = "<group>"; };
-		34579C40BB4D54B848C64DF56830EBB3 /* Pods-ScrollSegmentsSwift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScrollSegmentsSwift_Tests-dummy.m"; sourceTree = "<group>"; };
-		3757270B54414FA4A5D96AB2E0F47BBA /* Pods-ScrollSegmentsSwift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScrollSegmentsSwift_Tests.modulemap"; sourceTree = "<group>"; };
-		46F004EAC1937D0DCF68F8AB37F8DD36 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4BE004F95D64FEB11A2F0E25BA344C8D /* ScrollSegmentsSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollSegmentsSwift-umbrella.h"; sourceTree = "<group>"; };
-		4C124BCF4E2D78400E9E5D357A804551 /* Pods-ScrollSegmentsSwift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScrollSegmentsSwift_Example.modulemap"; sourceTree = "<group>"; };
-		54227BA8BBD6B0C3FBFE746DFA737F99 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A047B2862CA3E5A6EC60B9242B99AA5 /* Pods-ScrollSegmentsSwift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScrollSegmentsSwift_Tests-umbrella.h"; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5DDCCCB504013208D17B11FE26CC3D66 /* ScrollSegmentsSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollSegmentsSwift.swift; path = ScrollSegmentsSwift/Classes/ScrollSegmentsSwift.swift; sourceTree = "<group>"; };
-		6A7D3E7C47BAEE3A0A430070C7BD6D98 /* Pods_ScrollSegmentsSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScrollSegmentsSwift_Tests.framework; path = "Pods-ScrollSegmentsSwift_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7340D6DE84C28CE5EF012C05405D686F /* ScrollSegmentsSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScrollSegmentsSwift.framework; path = ScrollSegmentsSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7686F7668FF06F667D9FE07E4FB8E04B /* Pods-ScrollSegmentsSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollSegmentsSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		78252CB9A5AF3FCF01470C5574F7F12F /* ScrollSegmentsSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScrollSegmentsSwift-dummy.m"; sourceTree = "<group>"; };
-		8508A4503DDA08338347E6C685D6079E /* Pods-ScrollSegmentsSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollSegmentsSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		883F734FC5D55C4BD558DD3E93A34CDF /* Pods-ScrollSegmentsSwift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScrollSegmentsSwift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		894082C637A9E86331A2F9F60028EE66 /* Pods-ScrollSegmentsSwift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollSegmentsSwift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3D45E4AB4FB40D5A9E8BE8D48278EA6 /* ScrollSegmentsSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollSegmentsSwift-prefix.pch"; sourceTree = "<group>"; };
-		AAC7EFF45AECBBB076606ED298F8F02F /* Pods-ScrollSegmentsSwift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScrollSegmentsSwift_Example-dummy.m"; sourceTree = "<group>"; };
-		B018ACBD846FC6AB5293691692FF39B1 /* Pods-ScrollSegmentsSwift_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScrollSegmentsSwift_Tests-resources.sh"; sourceTree = "<group>"; };
-		B3D6B3F3636A769B404599EC88CFC7E7 /* Pods-ScrollSegmentsSwift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScrollSegmentsSwift_Example-umbrella.h"; sourceTree = "<group>"; };
-		B4D184429051C6A04F04E547E9F0413C /* Pods-ScrollSegmentsSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollSegmentsSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B5035DC1F86780152C19B3182B45F9A5 /* Pods_ScrollSegmentsSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScrollSegmentsSwift_Example.framework; path = "Pods-ScrollSegmentsSwift_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9174424618CF61AC311FFE1D6290E82 /* Pods-ScrollSegmentsSwift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollSegmentsSwift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D616075B6CB2B1ACB4E4FC2C35D28F9B /* Pods-ScrollSegmentsSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollSegmentsSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0218E6DC75112FEE72BA0E38A72CCF18 /* Pods-ScrollSegmentsSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollSegmentsSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
+		024A99877C2946ED5D6F8BE7671B3569 /* ScrollSegmentsSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScrollSegmentsSwift.framework; path = ScrollSegmentsSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1182606CB0B8137647CD34C6DC8D3F34 /* Pods-ScrollSegmentsSwift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScrollSegmentsSwift_Example.modulemap"; sourceTree = "<group>"; };
+		1E45EDA81E1E10F5EE17CCE78D39BBA9 /* ScrollSegmentsSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollSegmentsSwift-umbrella.h"; sourceTree = "<group>"; };
+		232AF8610DFD735E28BEE849B3A1BB7B /* Pods-ScrollSegmentsSwift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScrollSegmentsSwift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		29775158BC8EB3D2798B190CB9D10FED /* ScrollSegmentsSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ScrollSegmentsSwift-Info.plist"; sourceTree = "<group>"; };
+		2B47BDB9877BB4C6FA23265C95DC5734 /* Pods-ScrollSegmentsSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollSegmentsSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2BA1869068962F2A5A8CD3174DA11C9B /* Pods-ScrollSegmentsSwift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScrollSegmentsSwift_Example-frameworks.sh"; sourceTree = "<group>"; };
+		456198CE0E6D56076556E2D261E9C6D8 /* Pods-ScrollSegmentsSwift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScrollSegmentsSwift_Example-umbrella.h"; sourceTree = "<group>"; };
+		4B957A8F1827AE3B7DE1350D8D913031 /* Pods-ScrollSegmentsSwift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScrollSegmentsSwift_Tests.modulemap"; sourceTree = "<group>"; };
+		66F9C3BF1FCEDB249E144D6D34490B65 /* Pods-ScrollSegmentsSwift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScrollSegmentsSwift_Example-dummy.m"; sourceTree = "<group>"; };
+		6731D9C5D5835049D8D5FD0660D62AF4 /* Pods-ScrollSegmentsSwift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollSegmentsSwift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		718B1BC2BCC25D7BFA1CDE74B6BEA4ED /* Pods-ScrollSegmentsSwift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollSegmentsSwift_Tests-Info.plist"; sourceTree = "<group>"; };
+		847A467BCA632562FA62E2C1071F3AA5 /* Pods-ScrollSegmentsSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollSegmentsSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8BEEBFA3F00143206EA452EA4387A612 /* ScrollSegmentsSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollSegmentsSwift.xcconfig; sourceTree = "<group>"; };
+		9998C9B79BC0D6B0971687ED1A029CAB /* ScrollSegmentsSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScrollSegmentsSwift-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E7736EEA2ED839969B5F1C7AAF07480 /* Pods-ScrollSegmentsSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrollSegmentsSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A094DA395BF6A29FDE2024D6CB9F6FB0 /* Pods-ScrollSegmentsSwift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollSegmentsSwift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A1615E7F2E78641DD1B1D98D438D7CC8 /* ScrollSegmentsSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScrollSegmentsSwift.modulemap; sourceTree = "<group>"; };
+		A198522AC692D37C9E18351FE54FC770 /* Pods-ScrollSegmentsSwift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScrollSegmentsSwift_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A228B1F0A24DFB0B0E60815A1C9266B6 /* Pods-ScrollSegmentsSwift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrollSegmentsSwift_Example-Info.plist"; sourceTree = "<group>"; };
+		B0B408393C6419F0F2B1981FF6074D70 /* Pods-ScrollSegmentsSwift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScrollSegmentsSwift_Tests-dummy.m"; sourceTree = "<group>"; };
+		C6AB5F2A3C80080F6D60042B2DA78308 /* ScrollSegmentsSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollSegmentsSwift-prefix.pch"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D224CA17BA4D5AC2BD1CCE34E3A65AAE /* Pods-ScrollSegmentsSwift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScrollSegmentsSwift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DC96945ACCA86175B99344B5D26B61CB /* Pods_ScrollSegmentsSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScrollSegmentsSwift_Tests.framework; path = "Pods-ScrollSegmentsSwift_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6B58EB7229DE00222EB6AC41DDC0FC /* Pods_ScrollSegmentsSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ScrollSegmentsSwift_Example.framework; path = "Pods-ScrollSegmentsSwift_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1013FE92CB4FFF0A54D44252D469C60 /* ScrollSegmentsSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollSegmentsSwift.swift; path = ScrollSegmentsSwift/Classes/ScrollSegmentsSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9F4B4AFE94C7F72B8979CDA7F631553D /* Frameworks */ = {
+		75135E747987112E9B4EF235EB3CBD4E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8C9D4990AF705BA07188A43FD5DB766 /* Foundation.framework in Frameworks */,
+				E619185D1C186E38F9AD672AA4A758DD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0949F2CE824D79A0AA202E3D8E20FCA /* Frameworks */ = {
+		A8BA99ADE574200355D8E1DFF3D0AAD4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F47F643650694D0FF7DB21F64A2D0ABE /* Foundation.framework in Frameworks */,
+				E514A3C54AA1404D353272346B7C5568 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E75CD4A82351897F10B009F8FF9FB222 /* Frameworks */ = {
+		E67ED97F1AD6725404B59D8B4DD40E3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C27F822A2A965F156EDE421CA13691F4 /* Foundation.framework in Frameworks */,
+				50C4457FD0B03CED1A03E0ED69573B2E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		087A82C95B7B5CC4577297045085472A /* Support Files */ = {
+		0E513ABF49056FC2B422F22C345434E0 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				54227BA8BBD6B0C3FBFE746DFA737F99 /* Info.plist */,
-				32D6A693A22FA1E3C828438EABC2A348 /* ScrollSegmentsSwift.modulemap */,
-				142F81E7D6527B2509A3A654DA87B29A /* ScrollSegmentsSwift.xcconfig */,
-				78252CB9A5AF3FCF01470C5574F7F12F /* ScrollSegmentsSwift-dummy.m */,
-				A3D45E4AB4FB40D5A9E8BE8D48278EA6 /* ScrollSegmentsSwift-prefix.pch */,
-				4BE004F95D64FEB11A2F0E25BA344C8D /* ScrollSegmentsSwift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ScrollSegmentsSwift";
-			sourceTree = "<group>";
-		};
-		430420E10E1B67800C4582A014EDD1BE /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BD7E33EE3878BA7F5B1CAA706D567254 /* Pods-ScrollSegmentsSwift_Example */,
-				797576F0DFC07E3AD1785D010C6AEA4C /* Pods-ScrollSegmentsSwift_Tests */,
+				88133D0C4BA4A60B7B9739EF35CB82F4 /* Pods-ScrollSegmentsSwift_Example */,
+				B6332A2A0BB8D3C8ABB2D424F7CFBCF4 /* Pods-ScrollSegmentsSwift_Tests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+		2F471705B96BFBB4DE4E3075EFBC6E50 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+				EB6B58EB7229DE00222EB6AC41DDC0FC /* Pods_ScrollSegmentsSwift_Example.framework */,
+				DC96945ACCA86175B99344B5D26B61CB /* Pods_ScrollSegmentsSwift_Tests.framework */,
+				024A99877C2946ED5D6F8BE7671B3569 /* ScrollSegmentsSwift.framework */,
 			);
-			name = iOS;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		797576F0DFC07E3AD1785D010C6AEA4C /* Pods-ScrollSegmentsSwift_Tests */ = {
+		6C4BDF0A8B410416CC9BE99E76723503 /* ScrollSegmentsSwift */ = {
 			isa = PBXGroup;
 			children = (
-				46F004EAC1937D0DCF68F8AB37F8DD36 /* Info.plist */,
-				3757270B54414FA4A5D96AB2E0F47BBA /* Pods-ScrollSegmentsSwift_Tests.modulemap */,
-				091AF661634A7C79B6793D5A9BA2A84C /* Pods-ScrollSegmentsSwift_Tests-acknowledgements.markdown */,
-				B9174424618CF61AC311FFE1D6290E82 /* Pods-ScrollSegmentsSwift_Tests-acknowledgements.plist */,
-				34579C40BB4D54B848C64DF56830EBB3 /* Pods-ScrollSegmentsSwift_Tests-dummy.m */,
-				2E19A36C7E78699EDBBA0F3F38E58C23 /* Pods-ScrollSegmentsSwift_Tests-frameworks.sh */,
-				B018ACBD846FC6AB5293691692FF39B1 /* Pods-ScrollSegmentsSwift_Tests-resources.sh */,
-				5A047B2862CA3E5A6EC60B9242B99AA5 /* Pods-ScrollSegmentsSwift_Tests-umbrella.h */,
-				B4D184429051C6A04F04E547E9F0413C /* Pods-ScrollSegmentsSwift_Tests.debug.xcconfig */,
-				7686F7668FF06F667D9FE07E4FB8E04B /* Pods-ScrollSegmentsSwift_Tests.release.xcconfig */,
-			);
-			name = "Pods-ScrollSegmentsSwift_Tests";
-			path = "Target Support Files/Pods-ScrollSegmentsSwift_Tests";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				8B21B94D514D8CEE8201DD29F6BB5BCF /* Pods */,
-				F6A26B263B0E3793B09099F4E487A388 /* Products */,
-				430420E10E1B67800C4582A014EDD1BE /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		8B21B94D514D8CEE8201DD29F6BB5BCF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E26DBDAF5A192121EC59DB475F98A3D9 /* ScrollSegmentsSwift */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BD7E33EE3878BA7F5B1CAA706D567254 /* Pods-ScrollSegmentsSwift_Example */ = {
-			isa = PBXGroup;
-			children = (
-				084B5E0B0AA25E09450BA317497D1642 /* Info.plist */,
-				4C124BCF4E2D78400E9E5D357A804551 /* Pods-ScrollSegmentsSwift_Example.modulemap */,
-				883F734FC5D55C4BD558DD3E93A34CDF /* Pods-ScrollSegmentsSwift_Example-acknowledgements.markdown */,
-				894082C637A9E86331A2F9F60028EE66 /* Pods-ScrollSegmentsSwift_Example-acknowledgements.plist */,
-				AAC7EFF45AECBBB076606ED298F8F02F /* Pods-ScrollSegmentsSwift_Example-dummy.m */,
-				305622DD89F324EE86A8322A937AF531 /* Pods-ScrollSegmentsSwift_Example-frameworks.sh */,
-				198411936295689C03C6C7233BB5487D /* Pods-ScrollSegmentsSwift_Example-resources.sh */,
-				B3D6B3F3636A769B404599EC88CFC7E7 /* Pods-ScrollSegmentsSwift_Example-umbrella.h */,
-				8508A4503DDA08338347E6C685D6079E /* Pods-ScrollSegmentsSwift_Example.debug.xcconfig */,
-				D616075B6CB2B1ACB4E4FC2C35D28F9B /* Pods-ScrollSegmentsSwift_Example.release.xcconfig */,
-			);
-			name = "Pods-ScrollSegmentsSwift_Example";
-			path = "Target Support Files/Pods-ScrollSegmentsSwift_Example";
-			sourceTree = "<group>";
-		};
-		E26DBDAF5A192121EC59DB475F98A3D9 /* ScrollSegmentsSwift */ = {
-			isa = PBXGroup;
-			children = (
-				5DDCCCB504013208D17B11FE26CC3D66 /* ScrollSegmentsSwift.swift */,
-				087A82C95B7B5CC4577297045085472A /* Support Files */,
+				F1013FE92CB4FFF0A54D44252D469C60 /* ScrollSegmentsSwift.swift */,
+				8943ED8AFFA488237A62B264409F7046 /* Support Files */,
 			);
 			name = ScrollSegmentsSwift;
 			path = ScrollSegmentsSwift;
 			sourceTree = "<group>";
 		};
-		F6A26B263B0E3793B09099F4E487A388 /* Products */ = {
+		88133D0C4BA4A60B7B9739EF35CB82F4 /* Pods-ScrollSegmentsSwift_Example */ = {
 			isa = PBXGroup;
 			children = (
-				B5035DC1F86780152C19B3182B45F9A5 /* Pods_ScrollSegmentsSwift_Example.framework */,
-				6A7D3E7C47BAEE3A0A430070C7BD6D98 /* Pods_ScrollSegmentsSwift_Tests.framework */,
-				7340D6DE84C28CE5EF012C05405D686F /* ScrollSegmentsSwift.framework */,
+				1182606CB0B8137647CD34C6DC8D3F34 /* Pods-ScrollSegmentsSwift_Example.modulemap */,
+				232AF8610DFD735E28BEE849B3A1BB7B /* Pods-ScrollSegmentsSwift_Example-acknowledgements.markdown */,
+				6731D9C5D5835049D8D5FD0660D62AF4 /* Pods-ScrollSegmentsSwift_Example-acknowledgements.plist */,
+				66F9C3BF1FCEDB249E144D6D34490B65 /* Pods-ScrollSegmentsSwift_Example-dummy.m */,
+				2BA1869068962F2A5A8CD3174DA11C9B /* Pods-ScrollSegmentsSwift_Example-frameworks.sh */,
+				A228B1F0A24DFB0B0E60815A1C9266B6 /* Pods-ScrollSegmentsSwift_Example-Info.plist */,
+				456198CE0E6D56076556E2D261E9C6D8 /* Pods-ScrollSegmentsSwift_Example-umbrella.h */,
+				9E7736EEA2ED839969B5F1C7AAF07480 /* Pods-ScrollSegmentsSwift_Example.debug.xcconfig */,
+				0218E6DC75112FEE72BA0E38A72CCF18 /* Pods-ScrollSegmentsSwift_Example.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-ScrollSegmentsSwift_Example";
+			path = "Target Support Files/Pods-ScrollSegmentsSwift_Example";
+			sourceTree = "<group>";
+		};
+		8943ED8AFFA488237A62B264409F7046 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1615E7F2E78641DD1B1D98D438D7CC8 /* ScrollSegmentsSwift.modulemap */,
+				8BEEBFA3F00143206EA452EA4387A612 /* ScrollSegmentsSwift.xcconfig */,
+				9998C9B79BC0D6B0971687ED1A029CAB /* ScrollSegmentsSwift-dummy.m */,
+				29775158BC8EB3D2798B190CB9D10FED /* ScrollSegmentsSwift-Info.plist */,
+				C6AB5F2A3C80080F6D60042B2DA78308 /* ScrollSegmentsSwift-prefix.pch */,
+				1E45EDA81E1E10F5EE17CCE78D39BBA9 /* ScrollSegmentsSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ScrollSegmentsSwift";
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B6332A2A0BB8D3C8ABB2D424F7CFBCF4 /* Pods-ScrollSegmentsSwift_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4B957A8F1827AE3B7DE1350D8D913031 /* Pods-ScrollSegmentsSwift_Tests.modulemap */,
+				D224CA17BA4D5AC2BD1CCE34E3A65AAE /* Pods-ScrollSegmentsSwift_Tests-acknowledgements.markdown */,
+				A094DA395BF6A29FDE2024D6CB9F6FB0 /* Pods-ScrollSegmentsSwift_Tests-acknowledgements.plist */,
+				B0B408393C6419F0F2B1981FF6074D70 /* Pods-ScrollSegmentsSwift_Tests-dummy.m */,
+				718B1BC2BCC25D7BFA1CDE74B6BEA4ED /* Pods-ScrollSegmentsSwift_Tests-Info.plist */,
+				A198522AC692D37C9E18351FE54FC770 /* Pods-ScrollSegmentsSwift_Tests-umbrella.h */,
+				847A467BCA632562FA62E2C1071F3AA5 /* Pods-ScrollSegmentsSwift_Tests.debug.xcconfig */,
+				2B47BDB9877BB4C6FA23265C95DC5734 /* Pods-ScrollSegmentsSwift_Tests.release.xcconfig */,
+			);
+			name = "Pods-ScrollSegmentsSwift_Tests";
+			path = "Target Support Files/Pods-ScrollSegmentsSwift_Tests";
+			sourceTree = "<group>";
+		};
+		CDB5C67B92FEE4B7B78877CD1009E4F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C4BDF0A8B410416CC9BE99E76723503 /* ScrollSegmentsSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				CDB5C67B92FEE4B7B78877CD1009E4F8 /* Pods */,
+				2F471705B96BFBB4DE4E3075EFBC6E50 /* Products */,
+				0E513ABF49056FC2B422F22C345434E0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		377BD35587E9EA8ADF1A6A89AC973FA9 /* Headers */ = {
+		31F8D0E7F8BB887E3EC115C014F9B0D9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5842DFFB6CF1E5F34286F1B07BCC0AC0 /* ScrollSegmentsSwift-umbrella.h in Headers */,
+				F40B5F153460AA32F90BE9ABC8C09811 /* Pods-ScrollSegmentsSwift_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7379E3EF76ED402E009E07FFB4E6167 /* Headers */ = {
+		A06B14C8F8D3DAB821560B171593D489 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07D019E71E1149A4C3E909EA448BE501 /* Pods-ScrollSegmentsSwift_Tests-umbrella.h in Headers */,
+				6546C21CBAD3EB04E2AF762B02F185C2 /* ScrollSegmentsSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8BA3C2A52A026CD8A7DD54AB8E7F0B5 /* Headers */ = {
+		E8AD35B503C2792448E725A36C69D7BD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0884EC757E994039BBEE5DDB5180F274 /* Pods-ScrollSegmentsSwift_Example-umbrella.h in Headers */,
+				0571FB805EBB5FEBE8697E4F24ECD5C2 /* Pods-ScrollSegmentsSwift_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		334D724AB63E5EB2733C89E4B82702F1 /* Pods-ScrollSegmentsSwift_Tests */ = {
+		4D07EE6BBDDD55115050E6DC6096ABDD /* Pods-ScrollSegmentsSwift_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44EE21010D3CE573C029D09484FD6D65 /* Build configuration list for PBXNativeTarget "Pods-ScrollSegmentsSwift_Tests" */;
+			buildConfigurationList = 691A525FC7FCA55A1CD7DDEFD63E2768 /* Build configuration list for PBXNativeTarget "Pods-ScrollSegmentsSwift_Tests" */;
 			buildPhases = (
-				B7379E3EF76ED402E009E07FFB4E6167 /* Headers */,
-				661CF04167D7AA216359A5FFD69B080F /* Sources */,
-				9F4B4AFE94C7F72B8979CDA7F631553D /* Frameworks */,
-				1E6FEE0E1383C9C00E95CCD05A5BC71E /* Resources */,
+				E8AD35B503C2792448E725A36C69D7BD /* Headers */,
+				28BE17FDA04BAF6A9C7EED106C69FE78 /* Sources */,
+				A8BA99ADE574200355D8E1DFF3D0AAD4 /* Frameworks */,
+				4BCC12467ACBFABF57CCC90985F7BD81 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				19CF744454BC98A44D159BA6809DBD27 /* PBXTargetDependency */,
+				A75B3D1AE2DAA7AC882C5EDA8A5AD4CD /* PBXTargetDependency */,
 			);
 			name = "Pods-ScrollSegmentsSwift_Tests";
 			productName = "Pods-ScrollSegmentsSwift_Tests";
-			productReference = 6A7D3E7C47BAEE3A0A430070C7BD6D98 /* Pods_ScrollSegmentsSwift_Tests.framework */;
+			productReference = DC96945ACCA86175B99344B5D26B61CB /* Pods_ScrollSegmentsSwift_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4641E1AB3445040052B3A561BB00454D /* Pods-ScrollSegmentsSwift_Example */ = {
+		ED9D7205D3DB5682CF796BA0C98162A1 /* Pods-ScrollSegmentsSwift_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D94C886065EC58C65D38672B53091DD9 /* Build configuration list for PBXNativeTarget "Pods-ScrollSegmentsSwift_Example" */;
+			buildConfigurationList = 796B95627AF71E1A92880560E85B72B8 /* Build configuration list for PBXNativeTarget "Pods-ScrollSegmentsSwift_Example" */;
 			buildPhases = (
-				E8BA3C2A52A026CD8A7DD54AB8E7F0B5 /* Headers */,
-				5A966135E68B3E35F21E3443A4AD0850 /* Sources */,
-				E75CD4A82351897F10B009F8FF9FB222 /* Frameworks */,
-				A1BDA3E5B12404F2249FF552E1C6DC44 /* Resources */,
+				31F8D0E7F8BB887E3EC115C014F9B0D9 /* Headers */,
+				3894B1AC880392E7A418558ACC083ADB /* Sources */,
+				E67ED97F1AD6725404B59D8B4DD40E3A /* Frameworks */,
+				4D6FE8077450023AEFB91020D8B43A53 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FEC4B9B33D1000303763B37BEDB393CE /* PBXTargetDependency */,
+				676512698336EF8200FDA854533B642C /* PBXTargetDependency */,
 			);
 			name = "Pods-ScrollSegmentsSwift_Example";
 			productName = "Pods-ScrollSegmentsSwift_Example";
-			productReference = B5035DC1F86780152C19B3182B45F9A5 /* Pods_ScrollSegmentsSwift_Example.framework */;
+			productReference = EB6B58EB7229DE00222EB6AC41DDC0FC /* Pods_ScrollSegmentsSwift_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D7770BA371571B4FC60B009071C52D0D /* ScrollSegmentsSwift */ = {
+		FDEE2F30545EE2A5B922FBBAAB6519A3 /* ScrollSegmentsSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6B0E9962C536670B8BE53DEB09D7811E /* Build configuration list for PBXNativeTarget "ScrollSegmentsSwift" */;
+			buildConfigurationList = 3D5EB05837ECDE59B2E86041CDEF2F5F /* Build configuration list for PBXNativeTarget "ScrollSegmentsSwift" */;
 			buildPhases = (
-				377BD35587E9EA8ADF1A6A89AC973FA9 /* Headers */,
-				5565F4DAC94F279D7127BE1B48CA94A1 /* Sources */,
-				E0949F2CE824D79A0AA202E3D8E20FCA /* Frameworks */,
-				940379CE9234BBA053FFD366C4C12ADC /* Resources */,
+				A06B14C8F8D3DAB821560B171593D489 /* Headers */,
+				20A879CCFCDC9E097E308E4C94AA443D /* Sources */,
+				75135E747987112E9B4EF235EB3CBD4E /* Frameworks */,
+				11A8039DAF0299866C6E7A38B0A52F5F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -296,53 +290,53 @@
 			);
 			name = ScrollSegmentsSwift;
 			productName = ScrollSegmentsSwift;
-			productReference = 7340D6DE84C28CE5EF012C05405D686F /* ScrollSegmentsSwift.framework */;
+			productReference = 024A99877C2946ED5D6F8BE7671B3569 /* ScrollSegmentsSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F6A26B263B0E3793B09099F4E487A388 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 2F471705B96BFBB4DE4E3075EFBC6E50 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4641E1AB3445040052B3A561BB00454D /* Pods-ScrollSegmentsSwift_Example */,
-				334D724AB63E5EB2733C89E4B82702F1 /* Pods-ScrollSegmentsSwift_Tests */,
-				D7770BA371571B4FC60B009071C52D0D /* ScrollSegmentsSwift */,
+				ED9D7205D3DB5682CF796BA0C98162A1 /* Pods-ScrollSegmentsSwift_Example */,
+				4D07EE6BBDDD55115050E6DC6096ABDD /* Pods-ScrollSegmentsSwift_Tests */,
+				FDEE2F30545EE2A5B922FBBAAB6519A3 /* ScrollSegmentsSwift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1E6FEE0E1383C9C00E95CCD05A5BC71E /* Resources */ = {
+		11A8039DAF0299866C6E7A38B0A52F5F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		940379CE9234BBA053FFD366C4C12ADC /* Resources */ = {
+		4BCC12467ACBFABF57CCC90985F7BD81 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1BDA3E5B12404F2249FF552E1C6DC44 /* Resources */ = {
+		4D6FE8077450023AEFB91020D8B43A53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,86 +346,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5565F4DAC94F279D7127BE1B48CA94A1 /* Sources */ = {
+		20A879CCFCDC9E097E308E4C94AA443D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8F708BAB468CD6E1E3A0FF251FB76BE /* ScrollSegmentsSwift-dummy.m in Sources */,
-				24238DDB544F399CA1E98DAB9158585A /* ScrollSegmentsSwift.swift in Sources */,
+				605FFB1C5195BD3978CF6FB9A29A3083 /* ScrollSegmentsSwift-dummy.m in Sources */,
+				CB37AE6918702F253F3AD87B6853D02C /* ScrollSegmentsSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A966135E68B3E35F21E3443A4AD0850 /* Sources */ = {
+		28BE17FDA04BAF6A9C7EED106C69FE78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68C0CCB41250C0F0503267C58A71E7A1 /* Pods-ScrollSegmentsSwift_Example-dummy.m in Sources */,
+				BA5212B0C658D7E853C659F64652BC34 /* Pods-ScrollSegmentsSwift_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		661CF04167D7AA216359A5FFD69B080F /* Sources */ = {
+		3894B1AC880392E7A418558ACC083ADB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67CC478573605578D602660AB22B0A14 /* Pods-ScrollSegmentsSwift_Tests-dummy.m in Sources */,
+				A3D5359169AC312C22996D6FF082D178 /* Pods-ScrollSegmentsSwift_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		19CF744454BC98A44D159BA6809DBD27 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-ScrollSegmentsSwift_Example";
-			target = 4641E1AB3445040052B3A561BB00454D /* Pods-ScrollSegmentsSwift_Example */;
-			targetProxy = 71B57DA0BDADA812BAC63B06CC720F62 /* PBXContainerItemProxy */;
-		};
-		FEC4B9B33D1000303763B37BEDB393CE /* PBXTargetDependency */ = {
+		676512698336EF8200FDA854533B642C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ScrollSegmentsSwift;
-			target = D7770BA371571B4FC60B009071C52D0D /* ScrollSegmentsSwift */;
-			targetProxy = E0EF673979F6AA3663D248F0C7C7FA95 /* PBXContainerItemProxy */;
+			target = FDEE2F30545EE2A5B922FBBAAB6519A3 /* ScrollSegmentsSwift */;
+			targetProxy = 76BA5418D092EAA66B49750069AB6F52 /* PBXContainerItemProxy */;
+		};
+		A75B3D1AE2DAA7AC882C5EDA8A5AD4CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ScrollSegmentsSwift_Example";
+			target = ED9D7205D3DB5682CF796BA0C98162A1 /* Pods-ScrollSegmentsSwift_Example */;
+			targetProxy = 7060E1A68EA4DAA85D711C16A13970E6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		04138F1B141997208E3CDCDA3EE149B7 /* Release */ = {
+		11B1D9E4BDCFCE0237E4FBFA77FC92A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 142F81E7D6527B2509A3A654DA87B29A /* ScrollSegmentsSwift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ScrollSegmentsSwift/ScrollSegmentsSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ScrollSegmentsSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ScrollSegmentsSwift/ScrollSegmentsSwift.modulemap";
-				PRODUCT_MODULE_NAME = ScrollSegmentsSwift;
-				PRODUCT_NAME = ScrollSegmentsSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		200EED333502748DBD39218642773A72 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8508A4503DDA08338347E6C685D6079E /* Pods-ScrollSegmentsSwift_Example.debug.xcconfig */;
+			baseConfigurationReference = 9E7736EEA2ED839969B5F1C7AAF07480 /* Pods-ScrollSegmentsSwift_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -443,7 +403,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ScrollSegmentsSwift_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ScrollSegmentsSwift_Example/Pods-ScrollSegmentsSwift_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -456,17 +416,15 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		3E105B30A302F1EF78C9120C2DDFB37C /* Release */ = {
+		3AFAB5D68E80D023CA743F12F4AFFA02 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7686F7668FF06F667D9FE07E4FB8E04B /* Pods-ScrollSegmentsSwift_Tests.release.xcconfig */;
+			baseConfigurationReference = 847A467BCA632562FA62E2C1071F3AA5 /* Pods-ScrollSegmentsSwift_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -478,7 +436,72 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ScrollSegmentsSwift_Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ScrollSegmentsSwift_Tests/Pods-ScrollSegmentsSwift_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ScrollSegmentsSwift_Tests/Pods-ScrollSegmentsSwift_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E438521BB853C63F66533659397ECCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BEEBFA3F00143206EA452EA4387A612 /* ScrollSegmentsSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ScrollSegmentsSwift/ScrollSegmentsSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScrollSegmentsSwift/ScrollSegmentsSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ScrollSegmentsSwift/ScrollSegmentsSwift.modulemap";
+				PRODUCT_MODULE_NAME = ScrollSegmentsSwift;
+				PRODUCT_NAME = ScrollSegmentsSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9E2F9794B659741AADB49354C448BB8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B47BDB9877BB4C6FA23265C95DC5734 /* Pods-ScrollSegmentsSwift_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ScrollSegmentsSwift_Tests/Pods-ScrollSegmentsSwift_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -498,7 +521,7 @@
 			};
 			name = Release;
 		};
-		56A05ADD3BABDA1B56D1F979845809B1 /* Release */ = {
+		AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -530,132 +553,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		630A4B4AED0319A3B3D906DD5A1650F9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 142F81E7D6527B2509A3A654DA87B29A /* ScrollSegmentsSwift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ScrollSegmentsSwift/ScrollSegmentsSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ScrollSegmentsSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ScrollSegmentsSwift/ScrollSegmentsSwift.modulemap";
-				PRODUCT_MODULE_NAME = ScrollSegmentsSwift;
-				PRODUCT_NAME = ScrollSegmentsSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A5787FA40043D79A17E6C90B59A2C675 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4D184429051C6A04F04E547E9F0413C /* Pods-ScrollSegmentsSwift_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ScrollSegmentsSwift_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ScrollSegmentsSwift_Tests/Pods-ScrollSegmentsSwift_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BEFDB93BF207328A04F1220475D02C3B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -682,13 +579,46 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		E449A0C7A17668E75BA6E26E9A31C5FF /* Release */ = {
+		C7E869A1C1A2CD5C49F1D9EB28B51AD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D616075B6CB2B1ACB4E4FC2C35D28F9B /* Pods-ScrollSegmentsSwift_Example.release.xcconfig */;
+			baseConfigurationReference = 8BEEBFA3F00143206EA452EA4387A612 /* ScrollSegmentsSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ScrollSegmentsSwift/ScrollSegmentsSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScrollSegmentsSwift/ScrollSegmentsSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ScrollSegmentsSwift/ScrollSegmentsSwift.modulemap";
+				PRODUCT_MODULE_NAME = ScrollSegmentsSwift;
+				PRODUCT_NAME = ScrollSegmentsSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CB7FD8998028AD1DF19F4396DA4539E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0218E6DC75112FEE72BA0E38A72CCF18 /* Pods-ScrollSegmentsSwift_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -700,7 +630,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ScrollSegmentsSwift_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ScrollSegmentsSwift_Example/Pods-ScrollSegmentsSwift_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -713,8 +643,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -722,46 +650,106 @@
 			};
 			name = Release;
 		};
+		F232B5ECA11A71BFA199A229B323F454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		3D5EB05837ECDE59B2E86041CDEF2F5F /* Build configuration list for PBXNativeTarget "ScrollSegmentsSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEFDB93BF207328A04F1220475D02C3B /* Debug */,
-				56A05ADD3BABDA1B56D1F979845809B1 /* Release */,
+				C7E869A1C1A2CD5C49F1D9EB28B51AD1 /* Debug */,
+				5E438521BB853C63F66533659397ECCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44EE21010D3CE573C029D09484FD6D65 /* Build configuration list for PBXNativeTarget "Pods-ScrollSegmentsSwift_Tests" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A5787FA40043D79A17E6C90B59A2C675 /* Debug */,
-				3E105B30A302F1EF78C9120C2DDFB37C /* Release */,
+				AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */,
+				F232B5ECA11A71BFA199A229B323F454 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6B0E9962C536670B8BE53DEB09D7811E /* Build configuration list for PBXNativeTarget "ScrollSegmentsSwift" */ = {
+		691A525FC7FCA55A1CD7DDEFD63E2768 /* Build configuration list for PBXNativeTarget "Pods-ScrollSegmentsSwift_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				630A4B4AED0319A3B3D906DD5A1650F9 /* Debug */,
-				04138F1B141997208E3CDCDA3EE149B7 /* Release */,
+				3AFAB5D68E80D023CA743F12F4AFFA02 /* Debug */,
+				9E2F9794B659741AADB49354C448BB8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D94C886065EC58C65D38672B53091DD9 /* Build configuration list for PBXNativeTarget "Pods-ScrollSegmentsSwift_Example" */ = {
+		796B95627AF71E1A92880560E85B72B8 /* Build configuration list for PBXNativeTarget "Pods-ScrollSegmentsSwift_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				200EED333502748DBD39218642773A72 /* Debug */,
-				E449A0C7A17668E75BA6E26E9A31C5FF /* Release */,
+				11B1D9E4BDCFCE0237E4FBFA77FC92A9 /* Debug */,
+				CB7FD8998028AD1DF19F4396DA4539E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
