@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/ScrollSegmentsSwift.svg?style=flat)](https://cocoapods.org/pods/ScrollSegmentsSwift)
 [![License](https://img.shields.io/cocoapods/l/ScrollSegmentsSwift.svg?style=flat)](https://cocoapods.org/pods/ScrollSegmentsSwift)
 [![Platform](https://img.shields.io/cocoapods/p/ScrollSegmentsSwift.svg?style=flat)](https://cocoapods.org/pods/ScrollSegmentsSwift)
+[![Build Status](https://travis-ci.com/raketenok/ScrollSegmentsSwift.svg?branch=master)](https://travis-ci.com/raketenok/ScrollSegmentsSwift)
 
 ## Example
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BACB6BA2279B0AE00EB68D2 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		3BDBC43821187204006200E9 /* ScrollSegmentsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDBC43721187204006200E9 /* ScrollSegmentsSwift.framework */; };
 		4B10E475D5A9F66E40BE9FE5 /* Pods_ScrollSegmentsSwift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B31C70A7BD14B87566F1FA /* Pods_ScrollSegmentsSwift_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -14,7 +15,6 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7E4CE54E8E11F6D8A55D3DD3 /* Pods_ScrollSegmentsSwift_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9BD5E8DF05A588D1A5F96A /* Pods_ScrollSegmentsSwift_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -338,7 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				3BACB6BA2279B0AE00EB68D2 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
