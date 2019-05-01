@@ -2,8 +2,8 @@
 # * https://www.objc.io/issues/6-build-tools/travis-ci/
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode 10.2
-language: objective-c 
+language: objective-c
+osx_image: xcode10.1
 cache: cocoapods
 podfile: Example/Podfile
 before_install:
@@ -12,7 +12,7 @@ before_install:
 - gem install cocoapods # Since Travis is not always on latest version
 - pod install --repo-update
 - cd ..
-script: xcodebuild clean build test -workspace Example/ScrollSegmentsSwift.xcworkspace -scheme "CI" -sdk iphonesimulator -destination "platform=iOS Simulator,OS=9.3,name=iPhone 6" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+script: xcodebuild clean build test -workspace Example/ScrollSegmentsSwift.xcworkspace -scheme "CI" -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
 
 
 # cache: cocoapods
