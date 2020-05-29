@@ -26,7 +26,8 @@ public protocol ScrollSegmentDelegate: class {
     func segmentSelected(index: Int)
     func scrollSegmentsLoaded()
 }
-extension ScrollSegmentDelegate {
+
+public extension ScrollSegmentDelegate {
     func scrollSegmentsLoaded() { }
 }
 
