@@ -66,6 +66,7 @@ public class ScrollSegmentsSwift: UIControl {
     }()
     
     public override func layoutSubviews() {
+        super.layoutSubviews()
         self.updateViewLayouts()
     }
     
@@ -242,38 +243,29 @@ public class ScrollSegmentsSwift: UIControl {
         if !self.style.isScrollable {
             segmentsStack.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
         }
-        DispatchQueue.main.async {
-            self.setSelectIndex(index: 0, animated: false)
-            self.delegate?.scrollSegmentsLoaded()
-        }
+        self.setSelectIndex(index: selectedIndex, animated: false)
+        self.delegate?.scrollSegmentsLoaded()
     }
     
     private func updateViewLayouts() {
-        
-        DispatchQueue.main.async { [weak self] in
-            guard let self_ = self else {
-                return
-            }
-            self?.setIndicatorFrame(indexLabel: self_.selectedIndex)
+            self.setIndicatorFrame(indexLabel: self.selectedIndex)
             
-            guard self_.style.isScrollable else {
+            guard self.style.isScrollable else {
                 return
             }
             
-            guard self_.titleLabels.count > self_.selectedIndex else {
+            guard self.titleLabels.count > self.selectedIndex else {
                 return
             }
             
-            let selectedLabel = self_.titleLabels[self_.selectedIndex]
-            let offSetX = -(self_.scrollView.frame.width/2 - selectedLabel.frame.origin.x - selectedLabel.frame.size.width/2)
+            let selectedLabel = self.titleLabels[self.selectedIndex]
+            let offSetX = -(self.scrollView.frame.width/2 - selectedLabel.frame.origin.x - selectedLabel.frame.size.width/2)
             
-            guard let firstSegment = self_.titleLabels.first, let lastSegment = self_.titleLabels.last else {
+            guard let firstSegment = self.titleLabels.first, let lastSegment = self.titleLabels.last else {
                 return
             }
-            self?.scrollView.contentInset.left = self_.bounds.width/2 - firstSegment.frame.size.width/2
-            self?.scrollView.contentInset.right = self_.bounds.width/2 - lastSegment.frame.size.width/2
-            self?.scrollView.setContentOffset(CGPoint(x:offSetX, y: 0), animated: true)
-        }
+            self.scrollView.contentInset.left = self.bounds.width/2 - firstSegment.frame.size.width/2
+            self.scrollView.contentInset.right = self.bounds.width/2 - lastSegment.frame.size.width/2
+            self.scrollView.setContentOffset(CGPoint(x:offSetX, y: 0), animated: true)
     }
 }
-
