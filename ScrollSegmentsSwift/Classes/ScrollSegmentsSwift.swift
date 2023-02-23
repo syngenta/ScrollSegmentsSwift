@@ -35,9 +35,10 @@ public class ScrollSegmentsSwift: UIControl {
     
     public weak var delegate: ScrollSegmentDelegate?
     public var style: ScrollSegmentStyle
-    @IBInspectable public var titles:[String] {
+    @IBInspectable public var titles: [String] {
         didSet {
             reloadData(selectedIndex: 0)
+            self.layoutSubviews()
         }
     }
     private var titleLabels: [UILabel] = []
@@ -68,6 +69,10 @@ public class ScrollSegmentsSwift: UIControl {
     public override func layoutSubviews() {
         super.layoutSubviews()
         self.updateViewLayouts()
+    }
+
+    public override func didMoveToSuperview() {
+        super.didMoveToSuperview()
     }
     
     //MARK:- life cycle
