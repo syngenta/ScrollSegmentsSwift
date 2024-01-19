@@ -33,8 +33,8 @@ public extension ScrollSegmentDelegate {
 }
 
 public class ScrollSegmentsSwift: UIControl {
-    
-    
+
+
     public weak var delegate: ScrollSegmentDelegate?
     public var style: ScrollSegmentStyle
     @IBInspectable public var titles: [String] {
@@ -48,9 +48,9 @@ public class ScrollSegmentsSwift: UIControl {
     private var titleIndicators: [UIView] = []
     private var constraintIndWidth = NSLayoutConstraint()
     private var constraintIndLeft = NSLayoutConstraint()
-    
+
     public private(set) var selectedIndex = 0
-    
+
     let scrollView: UIScrollView = {
         let view = UIScrollView()
         view.showsHorizontalScrollIndicator = false
@@ -62,7 +62,7 @@ public class ScrollSegmentsSwift: UIControl {
         view.scrollsToTop = false
         return view
     }()
-    
+
     private var indicator: UIView = {
         let ind = UIView()
         ind.translatesAutoresizingMaskIntoConstraints = false
@@ -78,7 +78,7 @@ public class ScrollSegmentsSwift: UIControl {
     public override func didMoveToSuperview() {
         super.didMoveToSuperview()
     }
-    
+
     //MARK:- life cycle
     required public init?(coder aDecoder: NSCoder) {
         self.style = ScrollSegmentStyle()
@@ -96,11 +96,11 @@ public class ScrollSegmentsSwift: UIControl {
     deinit {
         NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIApplicationDidChangeStatusBarOrientation, object: nil)
     }
-    
+
     @objc private func rotated() {
         self.updateViewLayouts()
     }
-    
+
     @objc private func handleTapGesture(_ gesture: UITapGestureRecognizer) {
         let x = gesture.location(in: self).x + scrollView.contentOffset.x
 
@@ -115,9 +115,9 @@ public class ScrollSegmentsSwift: UIControl {
             }
         }
     }
-    
+
     public func setSelectIndex(index: Int, animated: Bool = true) {
-        
+
         guard index >= 0 , index < titleLabels.count else { return }
         self.selectedIndex = index
         if animated {
@@ -129,22 +129,25 @@ public class ScrollSegmentsSwift: UIControl {
             self.setIndicatorFrame(indexLabel: index)
             self.layoutIfNeeded()
         }
-        
+
         guard style.isScrollable else {
             self.scrollView.frame = self.bounds
             return
         }
-        
+
         guard self.titleLabels.count > index else {
             return
         }
-        
+
         let selectedLabel = titleLabelContainers[index]
-        let sideOffset = self.style.titlePendingHorizontal * 2
+        let sideOffset = style.titlePendingHorizontal * 2
+
+        let isSideItem = index == 0 || titleLabelContainers.indices.last == index
+        let additionalOffset = isSideItem ? 0 : sideOffset * 3
 
         self.scrollView.contentInset.left = sideOffset
         self.scrollView.contentInset.right = sideOffset
-        self.scrollView.scrollRectToVisible(selectedLabel.frame, animated: true)
+        self.scrollView.scrollRectToVisible(selectedLabel.frame.increasedSides(by: additionalOffset), animated: true)
     }
     
     private func setIndicatorFrame( indexLabel: Int) {
@@ -185,9 +188,10 @@ public class ScrollSegmentsSwift: UIControl {
         let leftConstraint =  self.scrollView.leftAnchor.constraint(equalTo: self.leftAnchor)
         let rightConstraint =  self.scrollView.rightAnchor.constraint(equalTo: self.rightAnchor)
         let bottomConstraint =  self.scrollView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
-        
+
         self.scrollView.addSubview(self.indicator)
         self.scrollView.addSubview(segmentsStack)
+
         let h = segmentsStack.heightAnchor.constraint(equalTo: self.scrollView.heightAnchor)
         let centerY = segmentsStack.centerYAnchor.constraint(equalTo: self.scrollView.centerYAnchor)
         let topConstraint1 = segmentsStack.topAnchor.constraint(equalTo: self.scrollView.topAnchor)
@@ -224,7 +228,7 @@ public class ScrollSegmentsSwift: UIControl {
             self.scrollView.isScrollEnabled = false
         } else {
             segmentsStack.distribution = .fill
-            segmentsStack.spacing = self.style.titlePendingHorizontal // + 20
+            segmentsStack.spacing = self.style.titlePendingHorizontal
             self.scrollView.isScrollEnabled = true
         }
         self.indicator.backgroundColor = self.style.indicatorColor
@@ -346,5 +350,32 @@ private extension UIView {
 
         NSLayoutConstraint.activate(constraints)
         view.layoutSubviews()
+    }
+}
+
+private extension CGRect {
+
+    func increasedSides(by value: CGFloat) -> CGRect {
+        return CGRect(x: self.origin.x - value,
+                      y: self.origin.y,
+                      width: self.size.width + value * 2,
+                      height: self.size.height)
+    }
+}
+
+struct ScrollSegmentsSwiftUI1_Previews: PreviewProvider {
+    static var previews: some View {
+        VStack {
+            ScrollSegmentsSwiftUI(titles: ["First",
+                                           "Second",
+                                           "Third",
+                                           "@",
+                                           "Really long title",
+                                           "Last"],
+                                  style: ScrollSegmentStyle()) {
+                print("Selected - \($0)")
+            }.frame(height: 50)
+            Spacer()
+        }
     }
 }
