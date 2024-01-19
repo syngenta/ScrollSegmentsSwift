@@ -1,29 +1,24 @@
 # ScrollSegmentsSwift
 
-[![CI Status](https://img.shields.io/travis/raketenok@gmail.com/ScrollSegmentsSwift.svg?style=flat)](https://travis-ci.org/raketenok@gmail.com/ScrollSegmentsSwift)
 [![Version](https://img.shields.io/cocoapods/v/ScrollSegmentsSwift.svg?style=flat)](https://cocoapods.org/pods/ScrollSegmentsSwift)
 [![License](https://img.shields.io/cocoapods/l/ScrollSegmentsSwift.svg?style=flat)](https://cocoapods.org/pods/ScrollSegmentsSwift)
 [![Platform](https://img.shields.io/cocoapods/p/ScrollSegmentsSwift.svg?style=flat)](https://cocoapods.org/pods/ScrollSegmentsSwift)
-[![Build Status](https://travis-ci.com/raketenok/ScrollSegmentsSwift.svg?branch=master)](https://travis-ci.com/raketenok/ScrollSegmentsSwift)
+
+<p float="left">
+     <img src='screen.jpg' width='300'>
+</p>
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Look at ScrollSegmentsSwiftUI -> Preview
 
-## Requirements
+## Swift Package Manager
 
-## Installation
-
-ScrollSegmentsSwift is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'ScrollSegmentsSwift'
-```
+(right click at the project files structure) > Add Package Dependencies > Add https://github.com/syngenta/ScrollSegmentsSwift.git
 
 ## Author
 
-raketenok@gmail.com, raketenok@gmail.com
+raketenok@gmail.com, raketenok@gmail.com, 
 
 ## License
 

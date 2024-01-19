@@ -51,8 +51,8 @@ struct ScrollSegmentsSwiftUI_Previews: PreviewProvider {
                                            "Last"],
                                   style: ScrollSegmentStyle()) {
                 print("Selected - \($0)")
-            }
+            }.frame(height: 50)
+            Spacer()
         }
-        .frame(height: 50)
     }
 }
