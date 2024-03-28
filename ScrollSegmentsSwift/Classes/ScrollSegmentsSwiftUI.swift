@@ -8,9 +8,15 @@
 import SwiftUI
 
 public struct ScrollSegmentsSwiftUI: UIViewRepresentable {
-    var titles: [String]
-    var style: ScrollSegmentStyle
-    var onSegmentSelected: (Int) -> Void
+    public let titles: [String]
+    public let style: ScrollSegmentStyle
+    public let onSegmentSelected: (Int) -> Void
+
+    init(titles: [String], style: ScrollSegmentStyle = .init(), onSegmentSelected: @escaping (Int) -> Void) {
+        self.titles = titles
+        self.style = style
+        self.onSegmentSelected = onSegmentSelected
+    }
 
     public func makeUIView(context: Context) -> ScrollSegmentsSwift {
         let segments = ScrollSegmentsSwift(titles: titles, style: style)
