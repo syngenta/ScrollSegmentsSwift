@@ -12,7 +12,7 @@ public struct ScrollSegmentsSwiftUI: UIViewRepresentable {
     public let style: ScrollSegmentStyle
     public let onSegmentSelected: (Int) -> Void
 
-    init(titles: [String], style: ScrollSegmentStyle = .init(), onSegmentSelected: @escaping (Int) -> Void) {
+    public init(titles: [String], style: ScrollSegmentStyle = .init(), onSegmentSelected: @escaping (Int) -> Void) {
         self.titles = titles
         self.style = style
         self.onSegmentSelected = onSegmentSelected
