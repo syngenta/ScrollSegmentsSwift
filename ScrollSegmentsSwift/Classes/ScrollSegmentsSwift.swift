@@ -11,7 +11,7 @@ import CoreFoundation
 import SwiftUI
 
 public struct ScrollSegmentStyle {
-    
+
     public var indicatorColor = UIColor.blue
     public var indicatorInactiveColor = UIColor.lightGray
     public var titlePendingHorizontal: CGFloat = 8
@@ -51,7 +51,7 @@ public class ScrollSegmentsSwift: UIControl {
 
     public private(set) var selectedIndex = 0
 
-    let scrollView: UIScrollView = {
+    lazy var scrollView: UIScrollView = {
         let view = UIScrollView()
         view.showsHorizontalScrollIndicator = false
         view.bounces = true
@@ -60,6 +60,10 @@ public class ScrollSegmentsSwift: UIControl {
         view.contentInset = UIEdgeInsets.zero
         view.contentOffset = CGPoint.zero
         view.scrollsToTop = false
+        if UIView.userInterfaceLayoutDirection(for: semanticContentAttribute) == .rightToLeft {
+            view.semanticContentAttribute = .forceLeftToRight
+            view.transform = CGAffineTransform(scaleX: -1, y: 1)
+        }
         return view
     }()
 
@@ -102,10 +106,21 @@ public class ScrollSegmentsSwift: UIControl {
     }
 
     @objc private func handleTapGesture(_ gesture: UITapGestureRecognizer) {
-        let x = gesture.location(in: self).x + scrollView.contentOffset.x
+        let tapLocation = gesture.location(in: self)
+        var x = tapLocation.x + scrollView.contentOffset.x
+
+        if UIView.userInterfaceLayoutDirection(for: semanticContentAttribute) == .rightToLeft {
+            x = bounds.width - tapLocation.x + scrollView.contentOffset.x
+        }
 
         for (i, container) in titleLabelContainers.enumerated() {
-            if x >= container.frame.minX && x <= container.frame.maxX {
+
+            var frame = container.frame
+            if UIView.userInterfaceLayoutDirection(for: semanticContentAttribute) == .rightToLeft {
+                frame.origin.x = scrollView.contentSize.width - frame.maxX
+            }
+
+            if x >= frame.minX && x <= frame.maxX {
                 if self.selectedIndex != i {
                     self.delegate?.segmentSelected(index: i)
                 }
@@ -140,6 +155,11 @@ public class ScrollSegmentsSwift: UIControl {
         }
 
         let selectedLabel = titleLabelContainers[index]
+        var frame = selectedLabel.frame
+        if UIView.userInterfaceLayoutDirection(for: semanticContentAttribute) == .rightToLeft {
+            frame.origin.x = scrollView.contentSize.width - frame.maxX
+        }
+
         let sideOffset = style.titlePendingHorizontal * 2
 
         let isSideItem = index == 0 || titleLabelContainers.indices.last == index
@@ -147,23 +167,27 @@ public class ScrollSegmentsSwift: UIControl {
 
         self.scrollView.contentInset.left = sideOffset
         self.scrollView.contentInset.right = sideOffset
-        self.scrollView.scrollRectToVisible(selectedLabel.frame.increasedSides(by: additionalOffset), animated: true)
+        self.scrollView.scrollRectToVisible(frame.increasedSides(by: additionalOffset), animated: true)
     }
-    
-    private func setIndicatorFrame( indexLabel: Int) {
-        
+
+    private func setIndicatorFrame(indexLabel: Int) {
         let currentLabel = titleLabelContainers[indexLabel]
         var width = CGFloat()
         var leftInset = CGFloat()
-        
-        if !style.isScrollable {
-            width = currentLabel.frame.size.width + 10
-            leftInset = currentLabel.frame.origin.x - 5
-        } else {
-            width = currentLabel.frame.size.width
-            leftInset = currentLabel.frame.origin.x
+
+        var frame = currentLabel.frame
+        if UIView.userInterfaceLayoutDirection(for: semanticContentAttribute) == .rightToLeft {
+            frame.origin.x = scrollView.contentSize.width - frame.maxX
         }
-        
+
+        if !style.isScrollable {
+            width = frame.size.width + 10
+            leftInset = frame.origin.x - 5
+        } else {
+            width = frame.size.width
+            leftInset = frame.origin.x
+        }
+
         self.constraintIndWidth.constant = width
         self.constraintIndLeft.constant = leftInset
         self.indicator.center.y = currentLabel.center.y
@@ -174,7 +198,7 @@ public class ScrollSegmentsSwift: UIControl {
             container.backgroundColor = index == indexLabel ? .clear : self.style.indicatorInactiveColor
         }
     }
-    
+
     private func reloadData(orientationChanged: Bool? = false, selectedIndex: Int) {
 
         let paddingsOnTheSide: CGFloat = self.style.isScrollable ? 0 : 20
@@ -182,6 +206,11 @@ public class ScrollSegmentsSwift: UIControl {
         segmentsStack.translatesAutoresizingMaskIntoConstraints = false
         segmentsStack.layoutMargins = UIEdgeInsets(top: 0, left: paddingsOnTheSide, bottom: 0, right: paddingsOnTheSide)
         segmentsStack.isLayoutMarginsRelativeArrangement = true
+
+        if UIView.userInterfaceLayoutDirection(for: semanticContentAttribute) == .rightToLeft {
+            segmentsStack.transform = CGAffineTransform(scaleX: -1, y: 1)
+        }
+
         self.scrollView.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(self.scrollView)
         let topConstraint =  self.scrollView.topAnchor.constraint(equalTo: self.topAnchor)
@@ -217,7 +246,7 @@ public class ScrollSegmentsSwift: UIControl {
         }
         // Set titles
         let font = self.style.titleFont
-        
+
         let coverH: CGFloat = font.lineHeight + self.style.titlePendingVertical
         segmentsStack.axis = .horizontal
         segmentsStack.spacing = self.style.titlePendingHorizontal
@@ -264,7 +293,12 @@ public class ScrollSegmentsSwift: UIControl {
 
         let coverX = self.titleLabels[selectedIndex].frame.origin.x
         let coverW = self.titleLabels[selectedIndex].frame.size.width
-        
+
+        var initialX = coverX
+        if UIView.userInterfaceLayoutDirection(for: semanticContentAttribute) == .rightToLeft {
+            initialX = scrollView.contentSize.width - coverX - coverW
+        }
+
         self.constraintIndWidth = NSLayoutConstraint(item: self.indicator,
                                                      attribute: .width,
                                                      relatedBy: .equal,
@@ -278,7 +312,7 @@ public class ScrollSegmentsSwift: UIControl {
                                                     toItem: self.scrollView,
                                                     attribute: .leading,
                                                     multiplier: 1,
-                                                    constant: coverX)
+                                                    constant: initialX)
         NSLayoutConstraint(item: self.indicator,
                            attribute: .height,
                            relatedBy: .equal,
@@ -295,9 +329,11 @@ public class ScrollSegmentsSwift: UIControl {
         if !self.style.isScrollable {
             segmentsStack.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
         }
-        
-        self.setSelectIndex(index: selectedIndex, animated: false)
-        self.delegate?.scrollSegmentsLoaded()
+
+        DispatchQueue.main.async {
+            self.setSelectIndex(index: selectedIndex, animated: false)
+            self.delegate?.scrollSegmentsLoaded()
+        }
     }
 
     private func updateViewLayouts() {
@@ -374,8 +410,21 @@ struct ScrollSegmentsSwiftUI1_Previews: PreviewProvider {
                                            "Last"],
                                   style: ScrollSegmentStyle()) {
                 print("Selected - \($0)")
-            }.frame(height: 50)
+            }
+            .frame(height: 50)
+            .environment(\.layoutDirection, .rightToLeft)
+            ScrollSegmentsSwiftUI(titles: ["First",
+                                           "Second",
+                                           "Third",
+                                           "@",
+                                           "Really long title",
+                                           "Last"],
+                                  style: ScrollSegmentStyle()) {
+                print("Selected - \($0)")
+            }
+            .frame(height: 50)
             Spacer()
         }
     }
+
 }
